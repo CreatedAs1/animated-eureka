@@ -1,3 +1,8 @@
-.fileReaders {
-    display: none;
+.fileReader {
+    color: #00F;
+}
+#importUIContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

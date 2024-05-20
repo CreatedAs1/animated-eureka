@@ -5,10 +5,12 @@
         <link rel="stylesheet" href="../styles.css">
     </head>
     <body>
-        <input type="file">
-        <button id="importSettings">Import Settings</button>
-        <button id="readAsText" class="fileReaders">Text</button>
-        <button id="readAsBinary" class="fileReaders">Binary</button>
+        <button id="importTrigger">Import...</button>
+        <div id="importUIContianer">
+            <input type="file" class="importUI" id="importFileEl">
+            <button id="readAsText" class="importUI fileReader">Text</button>
+            <button id="readAsBinary" class="importUI fileReader">Binary</button>
+        </div>
         <t>Name:</t>
         <input type="text">
         <t>MIME type:</t>
@@ -16,6 +18,7 @@
         <button id="saveButton" onclick="saveBlob()">Save</button>
         <button id="options" onclick="openOptionsMenu()">Options...</button>
         <div id="fileTree">
+
         </div>
         <textarea id="editor">Import a file or start typing</textarea>
     </body>
