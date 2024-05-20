@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Blob Editor</title>
+    </head>
+    <body>
+        <input type="file">
+        <button id="importSettings">Import Settings</button>
+        <button id="readAsText" class="fileReaders">Text</button>
+        <button id="readAsBinary" class="fileReaders">Binary</button>
+        <t>Name:</t>
+        <input type="text">
+        <t>MIME type:</t>
+        <input type="text">
+        <button id="saveButton" onclick="saveBlob()">Save</button>
+        <button id="options" onclick="openOptionsMenu()">Options...</button>
+        <div id="fileTree">
+        </div>
+        <textarea>
+            Import a file or start typing
+        </textarea>
+
+    </body>
+</html>
